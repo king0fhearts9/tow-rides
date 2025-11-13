@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiChevronLeft, FiChevronRight, FiStar } from "react-icons/fi";
@@ -72,9 +73,11 @@ export function TestimonialsSection() {
                 className="mx-auto max-w-3xl rounded-[2rem] border-2 border-black bg-white p-8 text-left shadow-[0_30px_80px_rgba(0,0,0,0.14)] md:p-10"
               >
                 <div className="flex items-center gap-4">
-                  <img
+                  <Image
                     src={testimonials[index].avatar}
                     alt={testimonials[index].name}
+                    width={64}
+                    height={64}
                     className="h-16 w-16 rounded-2xl border-2 border-black object-cover"
                   />
                   <div>
